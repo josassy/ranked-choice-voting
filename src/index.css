@@ -2,3 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary: #42033D;
+  --secondary: #DBD3D8;
+  --accent: #E4572E;
+  --background: #EFF1F3;
+  --black: #000;
+  --white: #fff;
+
+  background-color: var(--background);
+}
