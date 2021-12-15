@@ -1,10 +1,14 @@
-import { Link } from 'react-router-dom';
+import StyledH1 from '../components/StyledH1';
+import StyledLink from '../components/StyledLink';
+import VotingForm from '../components/VotingForm';
 
-const Home: React.FC = props => (
-  <>
-    <h1>Vote page</h1>
-    <Link to="/">Home</Link>
-  </>
+const Vote = () => (
+  <div className="flex flex-col flex-auto m-auto max-w-3xl p-12">
+    <StyledH1>Vote</StyledH1>
+    <VotingForm />
+    <p>This app is for demonstration purposes only and transmits no data.</p>
+    <StyledLink to="/">Back to Home</StyledLink>
+  </div>
 );
 
-export default Home;
+export default Vote;

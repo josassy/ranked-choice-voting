@@ -19,5 +19,7 @@ module.exports = {
       borderColor: ['hover', 'focus', 'group-hover'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

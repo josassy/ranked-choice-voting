@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 type StyledLinkProps =
   {
-    href: string,
+    to: string,
     children: React.ReactNode
   }
-const StyledLink = ({ href, children }: StyledLinkProps) => (
-  <a className="text-primary hover:text-secondary" href={href}>{children}</a>
+const StyledLink = ({ to, children }: StyledLinkProps) => (
+  <Link className="text-primary hover:text-secondary" to={to}>{children}</Link>
 )
 
 export default StyledLink;
