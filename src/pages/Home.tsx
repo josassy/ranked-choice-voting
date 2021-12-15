@@ -1,17 +1,18 @@
 import { Link } from 'react-router-dom';
 import StyledLink from '../components/StyledLink';
+import StyledH1 from '../components/StyledH1';
 
 const Home = () => (
   <>
-    <header className="h-20">
+    <header className="h-10">
       <img src='/images/home.jpg' className="w-full h-full object-cover" alt='' />
     </header>
     <div className="m-auto max-w-3xl p-12">
-      <h1 className="my-6 text-5xl text-primary font-sans font-black">Ranked Choice Voting</h1>
+      <StyledH1>Ranked Choice Voting</StyledH1>
       <p className="mb-12">
         Ranked choice voting is a different way of voting that allows voters to rank candidates by preference rather than picking just one. This can help lead to election results that better represent its voters. I've made an app that shows how this kind of voting interface could be implemented on a website.
       </p>
-      <button className="text-lg p-4 bg-primary hover:bg-secondary hover:border-primary hover:text-primary border text-white rounded-2xl"><Link to="/vote">Try it now &raquo;</Link></button>
+      <Link to="/vote" className="group text-lg p-4 bg-primary hover:bg-secondary text-white rounded-2xl"><span className="pb-1 border-b border-primary group-hover:border-white">Try it now &raquo;</span></Link>
       <h2 className="mt-12 mb-4 text-2xl text-primary">What is Ranked Choice Voting?</h2>
       <p className='my-4'>
         Ranked choice voting (RCV) describes voting systems that allow voters to rank candidates in order of preference, and then uses those rankings to elect candidates who best represent their constituents.

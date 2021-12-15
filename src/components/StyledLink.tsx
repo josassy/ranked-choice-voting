@@ -1,4 +1,3 @@
-
 type StyledLinkProps =
   {
     href: string,
